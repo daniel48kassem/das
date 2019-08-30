@@ -80,6 +80,6 @@ app.post("/",function(req,res){
 
 
  
-app.listen(3000,function(){
-    console.log("server is running on 3000");
+app.listen(process.env.PORT,function(){
+    console.log(`server is running on ${process.env.PORT}`);
 });
